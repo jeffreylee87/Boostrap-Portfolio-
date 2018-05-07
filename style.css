@@ -2,7 +2,7 @@
             border: 1px solid red !important;
         } */
         .container {
-            width: 960px;
+            max-width: 960px;
         }
 
         ol {
@@ -33,7 +33,10 @@
         .navbar-header {
             background-color: #4aaaa5;
             color: #ffffff; 
+            animation-name: backAni;
+            animation-duration: 7s;
         }
+        
 
         #navvy {
             padding-top: 0;
@@ -106,4 +109,10 @@
         }
         .loremText {
             margin-top: 1%;
+        }
+
+        @keyframes backAni {
+            to {background-color: #4aaaa5;}
+            from {background-color: red;}
+            
         }
